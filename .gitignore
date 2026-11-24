@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+*.sql
+*.sqlite*
+
+playwright-report/
+test-results/
+.validation/

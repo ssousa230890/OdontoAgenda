@@ -1,0 +1,6 @@
+# Use com docker-compose.yml, atrás de um proxy HTTPS para acesso externo.
+services:
+  backend:
+    restart: always
+  frontend:
+    restart: always

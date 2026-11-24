@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: odontoagenda_test
+      MYSQL_USER: tester
+      MYSQL_PASSWORD: isolated-test-password
+      MYSQL_ROOT_PASSWORD: isolated-root-password
+    tmpfs:
+      - /var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h 127.0.0.1 -uroot --silent"]
+      interval: 3s
+      timeout: 5s
+      retries: 40
+      start_period: 20s
+  tests:
+    build: ./backend
+    environment:
+      NODE_ENV: test
+      DB_HOST: mysql
+      DB_NAME: odontoagenda_test
+      DB_USER: tester
+      DB_PASS: isolated-test-password
+      JWT_SECRET: isolated-test-secret-with-at-least-32-characters
+    command: ["npm", "run", "test:integration"]
+    depends_on:
+      mysql:
+        condition: service_healthy

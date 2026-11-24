@@ -1,0 +1,1 @@
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f3f6f5;color:#20342d}a{color:inherit}button,input,select,textarea{font:inherit}button,a,input,select,textarea{touch-action:manipulation}:focus-visible{outline:3px solid #b88524;outline-offset:3px}button{cursor:pointer}button:disabled{opacity:.55;cursor:wait}
