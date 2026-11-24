@@ -1,6 +1,6 @@
 # Publicar no GitHub
 
-O projeto usa a branch main. O destino desta publicação é https://github.com/ssousa230890/OdontoAgenda. As instruções abaixo também servem para publicar uma cópia em outro repositório.
+O projeto está publicado em https://github.com/ssousa230890/OdontoAgenda, na branch main. O remoto origin está configurado para esse endereço. As instruções abaixo servem para publicar uma cópia em outro repositório.
 
 1. Crie um repositório vazio na sua conta do GitHub. Não inicialize outro README ou licença no site, pois esses arquivos já existem aqui.
 2. Na raiz do OdontoAgenda, confira os arquivos com git status. O .env, as dependências e o build devem permanecer ignorados.

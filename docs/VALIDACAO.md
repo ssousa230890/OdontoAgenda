@@ -33,9 +33,9 @@ Os testes de interface usam respostas simuladas da API para avaliar renderizaç�
 ## Escopo e pendências de instalação
 
 - Preencher o .env com credenciais exclusivas e os dados do primeiro administrador.
-- Definir a URL do repositório e enviar o primeiro commit; consulte PUBLICAR.md.
+- Repositório publicado: https://github.com/ssousa230890/OdontoAgenda. O primeiro commit enviado foi fe2bd18.
 - Para acesso público, configurar domínio, HTTPS, backups e acesso da equipe.
 - Uma instalação antiga com dados precisa de backup e planejamento da migração do esquema e da versão do MySQL. Nenhum volume existente foi renomeado, migrado ou apagado nesta entrega.
-- As rotinas de CI estão configuradas localmente; sua execução no GitHub ocorrerá após o envio.
+- A primeira execução de CI no GitHub passou: https://github.com/ssousa230890/OdontoAgenda/actions/runs/45322139247. Build, testes de navegador e integração com MySQL foram aprovados.
 
 O Git local usa a branch main. O procedimento de publicação e a configuração de propriedade da pasta no Windows estão documentados em PUBLICAR.md.

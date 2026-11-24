@@ -1,5 +1,7 @@
 # OdontoAgenda Militar
 
+[![Validar projeto](https://github.com/ssousa230890/OdontoAgenda/actions/workflows/ci.yml/badge.svg)](https://github.com/ssousa230890/OdontoAgenda/actions/workflows/ci.yml)
+
 Sistema de gestão de agendamentos odontológicos para unidades militares. Interface em português, cadastro de pacientes e dentistas, agenda com verificação de conflitos e controle de acesso por perfil.
 
 ## Interface
